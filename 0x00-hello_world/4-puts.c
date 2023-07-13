@@ -1,7 +1,6 @@
 #include <stdio.h>
 /**
-* it prints out a string
-* return always 0 
+* it prints out a string 
 */
 int main(void)
 {
