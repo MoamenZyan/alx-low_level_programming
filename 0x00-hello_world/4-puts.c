@@ -2,7 +2,7 @@
 /**
  * main - it prints out a string
  *
- * return : is always 0
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
