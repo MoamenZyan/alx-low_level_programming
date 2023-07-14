@@ -1,9 +1,12 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/* more headers goes there */
 
-/* betty style doc for function main goes there */
+/**
+* main - this is the main function
+* Return: is always 0
+*/
+
 int main(void)
 {
 	int n;
