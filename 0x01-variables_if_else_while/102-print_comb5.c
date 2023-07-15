@@ -5,7 +5,10 @@
 */
 int main(void)
 {
-int i, j, k, l;
+int i, j, k, l, tool;
+
+tool = 0;
+
 for (i = 0; i <= 9; i++)
 {
 	for (j = 0; j <= 9; j++)
@@ -20,6 +23,11 @@ for (i = 0; i <= 9; i++)
 				putchar(j + '0');
 				putchar(' ');
 				putchar(k + '0');
+				if ((k == 1) && (l == 1) && tool == 0)
+				{
+					l = 0;
+					tool = 1;
+				}
 				putchar(l + '0');
 				if ((i == 9) && (j == 8) && (k == 9) && (l == 9))
 					goto endloop;
