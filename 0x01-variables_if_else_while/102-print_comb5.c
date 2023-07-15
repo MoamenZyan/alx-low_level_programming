@@ -10,10 +10,12 @@ for (i = 0; i <= 9; i++)
 {
 	for (j = 0; j <= 9; j++)
 	{
-		for (k = 0; k <= 9; k++)
+		for (k = i; k <= 9; k++)
 		{
-			for (l = 1; l <= 9; l++)
+			for (l = j + 1; l <= 9; l++)
 			{
+				if ((i == j) && (j == k) && (k == l))
+					continue;
 				putchar(i + '0');
 				putchar(j + '0');
 				putchar(' ');
