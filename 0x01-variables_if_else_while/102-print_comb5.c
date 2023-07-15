@@ -5,37 +5,21 @@
 */
 int main(void)
 {
-int i, j, k, l, tool;
+int first, second;
 
-tool = 0;
-
-for (i = 0; i <= 9; i++)
+for (first = 0; first <= 99; first++)
 {
-	for (j = 0; j <= 9; j++)
+	for (second = 1; second <= 99; second++)
 	{
-		for (k = i; k <= 9; k++)
-		{
-			for (l = j + 1; l <= 9; l++)
-			{
-				if ((i == j) && (j == k) && (k == l))
-					continue;
-				putchar(i + '0');
-				putchar(j + '0');
-				putchar(' ');
-				putchar(k + '0');
-				if ((k == 1) && (l == 1) && tool == 0)
-				{
-					l = 0;
-					tool = 1;
-				}
-				putchar(l + '0');
-				if ((i == 9) && (j == 8) && (k == 9) && (l == 9))
-					goto endloop;
-				putchar(',');
-				putchar(' ');
-			}
-		}
-
+		putchar((first / 10) + 48);
+		putchar((first % 10) + 48);
+		putchar(' ');
+		putchar((second / 10) + 48);
+		putchar((second % 10) + 48);
+		if ((first == 98) && (second == 99))
+			goto endloop;
+		putchar(',');
+		putchar(' ');
 	}
 }
 endloop:
