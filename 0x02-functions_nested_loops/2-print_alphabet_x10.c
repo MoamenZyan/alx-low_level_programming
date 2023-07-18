@@ -12,7 +12,7 @@ int i, j;
 		{
 			_putchar(j);
 		}
-	putchar('\n');
+	_putchar('\n');
 	}
 }
 
