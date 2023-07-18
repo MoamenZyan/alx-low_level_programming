@@ -12,12 +12,5 @@ int i;
 	}
 	_putchar('\n');
 }
-/**
-* main - this is the main function
-* Return: is always 0
-*/
-int main(void)
-{
-print_alphabet();
-return (0);
-}
+
+
