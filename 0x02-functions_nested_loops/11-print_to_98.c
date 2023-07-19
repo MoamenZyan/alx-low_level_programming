@@ -11,9 +11,9 @@ int i;
 	if (n > 98)
 	{
 
-		for (i = n; n >= 98; n--)
+		for (i = n; i >= 98; i--)
 		{
-			if (n == 98)
+			if (i == 98)
 			{
 				printf("%d", i);
 				continue;
@@ -23,9 +23,9 @@ int i;
 	}
 	else if (n < 98)
 	{
-		for (i = n; n <= 98; n++)
+		for (i = n; i <= 98; i++)
 		{
-			if (n == 98)
+			if (i == 98)
 			{
 				printf("%d", i);
 				continue;
