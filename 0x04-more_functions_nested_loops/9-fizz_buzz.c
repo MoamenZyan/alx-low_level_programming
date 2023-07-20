@@ -7,11 +7,8 @@
 int main(void)
 {
 int i, count1, count2;
-
 count1 = 0;
-
 count2 = 0;
-
 	for (i = 1; i <= 100; i++)
 	{
 		++count1;
@@ -35,10 +32,13 @@ count2 = 0;
 		}
 		else if (count2 == 5)
 		{
+			if (i == 100)
+			{
+				printf("Buzz\n");
+				continue;
+			}
 			printf("Buzz ");
 			count2 = 0;
-			if (i == 100)
-				printf("\n");
 			continue;
 		}
 		printf("%d ", i);
