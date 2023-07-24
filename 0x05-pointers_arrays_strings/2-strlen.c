@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 /**
 * _strlen - this is the main function
 * @s: input
