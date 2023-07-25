@@ -15,9 +15,9 @@ int i, len;
 
 len = (int)strlen(str);
 
-	for (i = 0; i <= len; i += 2)
+	for (i = 0; i <= len + 2; i += 2)
 	{
-		if (i == len)
+		if (i == len + 2)
 		{
 			_putchar('\n');
 			break;
