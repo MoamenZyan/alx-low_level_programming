@@ -15,17 +15,10 @@ int i, len;
 
 len = (int)strlen(str);
 
-	for (i = 0; i <= len + 2; i += 2)
+	for (i = 0; i <= len + 1; i += 2)
 	{
-		if (i == len + 2)
-		{
-			_putchar('\n');
-			break;
-		}
-		else
-		{
-			_putchar(str[i]);
-		}
+		_putchar(str[i]);
 	}
+_putchar('\n');
 
 }
