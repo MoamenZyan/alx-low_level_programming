@@ -1,6 +1,11 @@
 #include "main.h"
 #include <string.h>
 
+/**
+* puts_half - this is the main function
+* Return: nothing
+* @str: input
+*/
 
 void puts_half(char *str)
 {
@@ -19,13 +24,4 @@ else
 	}
 
 _putchar('\n');
-}
-
-int main(void)
-{
-    char *str;
-
-    str = "0123456789";
-    puts_half(str);
-    return (0);
 }
