@@ -18,7 +18,7 @@ int i, len;
 		len = (int)strlen(str) - 1;
 
 
-	for (i = len / 2; i < len; i++)
+	for (i = len / 2; i < len + 1; i++)
 	{
 		_putchar(str[i]);
 	}
