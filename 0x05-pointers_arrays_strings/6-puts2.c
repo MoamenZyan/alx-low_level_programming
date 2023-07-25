@@ -15,7 +15,7 @@ int i, len;
 
 len = (int)strlen(str);
 
-	for (i = 0; i <= len; i+2)
+	for (i = 0; i <= len; i += 2)
 	{
 		if (i == len)
 		{
@@ -28,5 +28,14 @@ len = (int)strlen(str);
 		}
 	}
 
+}
+
+int main(void)
+{
+    char *str;
+
+    str = "0123456789";
+    puts2(str);
+    return (0);
 }
 
