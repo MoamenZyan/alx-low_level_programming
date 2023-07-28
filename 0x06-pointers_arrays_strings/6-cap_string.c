@@ -32,7 +32,7 @@ return (0);
 }
 
 /**
-* *cap_string - determains wethere ascii is lower case
+* cap_string - determains wethere ascii is lower case
 * @s: char
 * Return: 1 or 0
 */
