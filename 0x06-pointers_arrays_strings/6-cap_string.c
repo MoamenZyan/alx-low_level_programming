@@ -46,7 +46,9 @@ int foundDelimit = 1;
 while (*s)
 {
 	if (isDelimiter(*s))
+	{
 		foundDelimit = 1;
+	}
 	else if (isLower(*s) && foundDelimit)
 	{
 		*s -= 32;
@@ -54,11 +56,13 @@ while (*s)
 		foundDelimit = 0;
 	}
 	else
+	{
 		foundelimit = 0;
+	}
 	s++;
 }
-	return (ptr);
 
+return (ptr);
 }
 
 
