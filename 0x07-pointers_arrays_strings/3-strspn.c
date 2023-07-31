@@ -16,7 +16,7 @@ n = 0;
 	{
 		for (i = 0; accept[i]; i++)
 		{
-			if (*s == accet[i])
+			if (*s == accept[i])
 			{
 				n++;
 				break;
