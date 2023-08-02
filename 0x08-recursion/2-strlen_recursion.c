@@ -12,15 +12,11 @@ int _strlen_recursion(char *s)
 
 	total = 0;
 
-	if (*s == '\0')
-	{
-		goto here;
-	}
-	else
+	if (*s)
 	{
 		total++;
 		total += _strlen_recursion(s + 1);
 	}
-here:
 return (total);
 }
+
