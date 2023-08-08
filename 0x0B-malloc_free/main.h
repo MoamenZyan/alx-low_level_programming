@@ -3,4 +3,6 @@
 
 int _putchar(char c);
 
+int **alloc_grid(int width, int height);
+
 #endif
