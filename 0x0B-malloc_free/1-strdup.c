@@ -15,13 +15,21 @@ char *_strdup(char *str)
 char *dup;
 int i, r;
 r = 0;
+
+if (str == NULL)
+{
+	return (NULL);
+}
+
 while (str[r] != '\0')
 	r++;
 
 
 dup = (char *)malloc(r + 1);
 
-if (str == NULL)
+
+
+if (dup == NULL)
 {
 	return (NULL);
 }
@@ -31,9 +39,5 @@ for (i = 0; i < r; i++)
 	dup[i] = str[i];
 }
 
-if (dup == NULL)
-{
-	return (NULL);
-}
 return (dup);
 }
