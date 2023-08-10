@@ -44,8 +44,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		count++;
 		x = i;
 	}
-
-	p[x+1] = '\0';
+	p[x + 1] = '\0';
 	return (p);
 }
 
