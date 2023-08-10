@@ -9,7 +9,6 @@
  *
  * Return: pointer to the new array
  */
-
 int *array_range(int min, int max)
 {
 	int i, *p, count;
@@ -17,7 +16,7 @@ int *array_range(int min, int max)
 	if (min > max)
 		return (NULL);
 
-	p = (int *)malloc(sizeof(int) * (max - min) + 1);
+	p = malloc(sizeof(int) * (max - min) + 1);
 
 	if (p == NULL)
 		return (NULL);
@@ -30,3 +29,4 @@ int *array_range(int min, int max)
 
 	return (p);
 }
+
