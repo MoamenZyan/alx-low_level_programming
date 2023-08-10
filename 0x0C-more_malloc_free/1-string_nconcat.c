@@ -39,7 +39,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	count = 0;
 	for (i = len1; i < len1 + (int)n; i++)
 	{
-		if (i == len1 + (int)n)
+		if (i == (len1 + (int)n) - 1)
 		{
 			p[i] = '\0';
 			break;
