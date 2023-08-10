@@ -32,14 +32,14 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		n = len2;
 	}
 	p = malloc(sizeof(*p) * (len1 + n + 1));
-	if (p == NULL)
+	if (!p)
 		return (NULL);
 	for (i = 0; i < len1; i++)
 		p[i] = s1[i];
 	count = 0;
 	for (i = len1; i < len1 + (int)n; i++)
 	{
-		if (i == (len1 + (int)n) - 1)
+		if (i == (len1 + (int)n))
 		{
 			p[i] = '\0';
 			break;
