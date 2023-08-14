@@ -1,5 +1,10 @@
 #include <stdio.h>
 
+/**
+* main - this the main function
+* Return: 0 always success
+*/
+
 int main(void)
 {
 
