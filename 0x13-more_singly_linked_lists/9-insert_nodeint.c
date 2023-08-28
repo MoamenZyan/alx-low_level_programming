@@ -3,12 +3,14 @@
 #include "lists.h"
 
 /**
- * insert_nodeint_at_index - inserting a specific node at specific index
- * @head: first node of the list
- * @idx: targeted index
- * @n: value of the node
- * Return: address of the node
-*/
+ * insert_nodeint_at_index - inserts a new node in a linked list,
+ * at a given position
+ * @head: pointer to the first node in the list
+ * @idx: index where the new node is added
+ * @n: data to insert in the new node
+ * Return: pointer to the new node, or NULL
+ */
+
 
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
@@ -36,15 +38,16 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 	i = 0;
 	while (i != idx && temp != NULL)
 	{
-		i++;
-		temp = temp->next;
-		if (i == idx - 1)
+		if (i == (idx - 1))
 		{
 			new->next = temp->next;
 			temp->next = new;
 			break;
 		}
+		temp = temp->next;
+		i++;
 	}
 
 	return (new);
 }
+
