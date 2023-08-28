@@ -11,19 +11,11 @@ size_t listint_len(const listint_t *h)
 {
 	size_t i;
 
-	if (h == NULL)
-	{
-		printf("Error\n");
-		return (1);
-	}
-	const listint_t *ptr;
-
-	ptr = h;
-
-	while (ptr != NULL)
+	i = 0;
+	while (h != NULL)
 	{
 		i++;
-		ptr = ptr->next;
+		h = h->next;
 	}
 
 	return (i);
